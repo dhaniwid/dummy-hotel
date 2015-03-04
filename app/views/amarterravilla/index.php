@@ -81,7 +81,7 @@ function MM_swapImage() { //v3.0
 	    </div><!--end mainimg -->
 		<div id="submenu">
 			<div id="booking">
-			<iframe src="http://localhost:9010/widget-vertical" height="367px" width="88%" style="position: relative;border-radius: 5px 5px 5px 5px;
+			<iframe src="http://be.zkrhm.com/widget-vertical" height="367px" width="88%" style="position: relative;border-radius: 5px 5px 5px 5px;
                           border: 1px solid #ebebeb;"></iframe>
 				<p>&nbsp;</p>
 			    <p><a href="http://www.accoradvantageplus.com" target="_blank" onmouseover="MM_swapImage('accor_advantage_plus','','images/accor_advantage_plus_on.png',1)" onmouseout="MM_swapImgRestore()"><img src="images/accor_advantage_plus_off.png" alt="Accor Advantage Plus" width="230" height="50" id="accor_advantage_plus" /></a></p>
