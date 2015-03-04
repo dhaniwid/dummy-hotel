@@ -1,0 +1,421 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+	height: 100%;
+	background: url(images/body_bg.jpg) repeat-x;
+}
+
+#wrap {
+	min-height: 100%;
+	margin: 0 auto;
+	width: 960px;	
+}
+
+#wrap:before { /* Opera and IE8 "redraw" bug fix */
+	content: "";
+	float: left;
+	height: 100%;
+	margin-top: -999em;
+}
+
+* html #wrap { /* IE6 workaround */
+	height: 100%; 
+}
+
+h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: #A16733;
+	font-weight: normal;
+	text-transform:uppercase;
+	padding-bottom: 30px;
+}
+
+h2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	color: #A16733;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	letter-spacing: 1px;
+	color: #A16733;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+
+#slogan {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.1em;
+	font-style: italic;
+	letter-spacing: 0px;
+	color: #A3321B;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	letter-spacing: 0px;
+	color: #DDD;
+	font-weight: 100;
+	line-height: 18px;
+}
+
+tr td {
+	padding: 0px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	letter-spacing: 0px;
+	color: #7F6352;
+	font-weight: 100;
+	line-height: 18px;
+}
+
+#header {
+	height: 180px;
+	text-align: center;
+}
+
+.logo {
+	margin-top: 13px;
+	margin-left:-100px;
+}
+
+.mgallerylogo {
+	margin-top:0;
+	margin-left:30px;
+	float:left;
+}
+	
+#topmenu {
+	height: 40px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 11px;
+	font-weight: normal;
+	border-top: 1px solid #4E3926;
+}
+
+#topmenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 12px;
+	padding-bottom: 0px;
+}
+
+#topmenu li {
+	display: inline;
+}
+
+#topmenu a {
+	color: #A16733;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#topmenu a:hover {
+	/*background-color: #FDEFE1; */
+	color: #FC0;
+}
+
+#mainimg {
+	height: 330px;
+}
+
+#maincontent {
+	width: 960px;
+	text-align: center;
+	padding: 30px 0px 20px 0px;
+}
+
+#submenu {
+	width: 260px;
+	padding: 30px 0px 20px 30px;
+	float: left;
+}
+
+#submenu ul {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	letter-spacing: 1px;
+	list-style-type: disc;
+	margin: 0;
+	padding-left: 15px;
+	color: #FC0;
+}
+
+#submenu a {
+	display: block;
+	font-weight: normal;
+	color: #CC9966;
+	text-align:left;
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#submenu a:hover {
+	color: #CC3300;
+}
+
+fieldset {
+	background-color:#352517;
+	border:0px;
+	width:210px;
+	padding:5px 10px 10px 10px;
+}
+
+#content {
+	width: 609px;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 0px 30px 5px 30px;
+	border-left: 1px solid #4E3926;
+}
+
+#content li {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:0.9em;
+	color: #FFF;
+	line-height: 22px;
+	margin-left: 15px;
+}
+
+#content a {
+	color: #A3321B;
+	text-decoration: none;
+}
+
+#content a:hover {
+	color: #A3321B;
+	text-decoration: underline;
+}
+
+#contentwide {
+	width: 900px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	padding: 0px 30px 5px 30px;
+}
+
+.imagelist {
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	clear:left;
+}
+
+#photogallery {
+	margin: 0px 0px 0px 30px;
+	width:910px;
+	text-align:left;
+}
+
+#photogalleryvillas {
+	margin: 0;
+	text-align:left;
+}
+
+#gallerycontent {
+	width: 960px;
+	text-align: left;
+	padding: 30px 0px 20px 0px;
+}
+
+#reservationform {
+	width: 900px;
+	margin-left: 30px;
+}
+
+#contact {
+	width: 960px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	color: #7F6352;
+	font-weight:100;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 18px;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 90px;
+}  /* must be same height as the footer */
+
+#pagenumber {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:0.7em;
+	color:#7F6352;
+	padding:10px;
+	text-align: center;
+	margin-top:10px;
+}
+
+#pagenumber a {
+	color:#7F6352;
+	margin:1px;
+	padding:5px;
+	text-decoration:none;
+}
+
+#pagenumber a:hover {
+	color:#A3321B;
+}
+
+.pagenumber_active {
+	border:1px solid #333;
+	
+	padding:5px;
+}
+
+#footer {
+	position: relative;
+	margin-top: -90px; /* negative value of footer height */
+	height: 90px;
+	clear:both;
+} 
+
+#socialmediaicon {
+	height:40px;
+	text-align:center;
+}
+
+#copyright {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.6em;
+	letter-spacing: 3px;
+	color: #A16733;
+	text-align: center;
+}
+
+#copyright a {
+	text-decoration:none;
+	color:#A16733;
+}
+
+#copyright a:hover {
+	text-decoration:none;
+	color:#CC3300;
+}
+
+#kuningdesign {color:#4E3926;}
+#kuningdesign a {color:#4E3926;}
+#kuningdesign a:hover {color:#FC0;}
+
+/* gallery section */
+
+.galleryText {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.close {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align: right;
+	padding-right: 5px;
+}
+a.close {
+	color: #333300;
+	text-decoration: none;
+}
+a:hover.close {
+	color: #669900;
+}
+
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+.thumbnail {
+	margin-right:3px;
+}
+
+.thumbnailright {
+	margin-right:0px;
+}
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 1000; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 20px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+
+*/
